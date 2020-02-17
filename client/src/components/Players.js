@@ -18,10 +18,7 @@ const Players = props => {
             {props.players.map(person => (
                 <Cards
                     key= {person.id}
-                    name = {person.name}
-                    id = {person.id}
-                    country = {person.country}
-                    searches = {person.searches}
+                    person = {person}
                 />
             ))}
         </CardList>

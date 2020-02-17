@@ -8,14 +8,16 @@ const CardContainer = styled.div`
     border: 3px solid dodgerblue;
     text-align:center;
     margin: 20px;
+    line-height: 10vh;
 `
 const Cards = props => {
+    const person = props.person;
     return(
         <CardContainer data-testid='card-render'>
-            <h1>Name: {props.name}</h1>
-            <h5>ID: {props.id}</h5>
-            <h2>Country of Origin: {props.country}</h2>
-            <h4>Has had {props.searches} searches last year</h4>
+            <h1>Name: {person.name}</h1>
+            <h5>ID: {person.id}</h5>
+            <h2>Country of Origin: {person.country}</h2>
+            <h4>Has had {person.searches} searches last year</h4>
         </CardContainer>
     )
 };
